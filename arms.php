@@ -24,5 +24,6 @@ register_activation_hook( __FILE__, array( 'ARMS', 'plugin_activation' ) );
 register_deactivation_hook( __FILE__, array( 'ARMS', 'plugin_deactivation' ) );
 
 require_once( ARMS__PLUGIN_DIR . 'class-arms.php' );
+require_once( ARMS__PLUGIN_DIR . 'class-arms-meta-box.php' );
 
 add_action( 'init', array( 'ARMS', 'init' ) );
